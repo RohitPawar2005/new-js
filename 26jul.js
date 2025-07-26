@@ -50,10 +50,24 @@ let arr = [{
 },{    name: "sita",
     age: 20,
     city: "chennai"}]
-console.log(arr);
+console.log(arr)
 
 arr.map((e) => {
-    console.log(e.name);
-    console.log(e.age);
-    // console.log(e.city);
+    console.log(e.name)
+    console.log(e.age)
+    console.log(e.city)
 })
+document.write("<h1>Array of Objects</h1>")
+arr.forEach((e) => {
+    document.write(`<h2>Name: ${e.name}</h2>`)
+    document.write(`<h3>Age: ${e.age}</h3>`)
+    document.write(`<h4>City: ${e.city}</h4>`)
+})
+
+// let show = document.getElementById("show");
+// arr.map((e) => {
+//     show.innerHTML += 
+//     `<h2>Name: ${e.name}</h2>`;
+//     <P>${e.age}</h1/h2>
+//     <P>${e.city}</P>
+// })
